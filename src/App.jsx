@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import rapImg from "./rap.jpg"; // ✅ import the image from src
+import rapImg from "./rap.jpg"; 
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <p>My student profile page</p>
       <div className="flex-box">
         <div>
-          <img src={rapImg} alt="Rapunzel" /> {/* ✅ use imported variable */}
+          <img src={rapImg} alt="Rapunzel" /> 
         </div>
 
         <table border="1">
