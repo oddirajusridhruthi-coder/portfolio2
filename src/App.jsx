@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import rapImg from "./rap.jpg"; // ✅ import the image from src
 
 function App() {
   return (
@@ -8,30 +9,31 @@ function App() {
       <p>My student profile page</p>
       <div className="flex-box">
         <div>
-<img src="/rap.jpg" alt="Rapunzel">
-
+          <img src={rapImg} alt="Rapunzel" /> {/* ✅ use imported variable */}
         </div>
 
         <table border="1">
-          <tr>
-            <th>Name</th>
-            <td>Dhruthi</td>
-          </tr>
-          <tr>
-            <th>Age</th>
-            <td>18</td>
-          </tr>
-          <tr>
-            <th>Course</th>
-            <td>B.Tech</td>
-          </tr>
-          <tr>
-            <th>College</th>
-            <td>KLU Hyderabad</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <td>Dhruthi</td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td>18</td>
+            </tr>
+            <tr>
+              <th>Course</th>
+              <td>B.Tech</td>
+            </tr>
+            <tr>
+              <th>College</th>
+              <td>KLU Hyderabad</td>
+            </tr>
+          </tbody>
         </table>
-
       </div>
+
       <div className="form-section">
         <h2>Contact Form</h2>
         <form>
@@ -40,7 +42,6 @@ function App() {
           <button type="submit">Submit</button>
         </form>
       </div>
-
     </div>
   );
 }
