@@ -8,7 +8,9 @@ function App() {
       <p>My student profile page</p>
       <div className="flex-box">
         <div>
-<img src="/rap.jpg" alt="Rapunzel" />
+import rap from "./rap.jpg";
+<img src={rap} alt="Rapunzel" />
+
 
         </div>
 
